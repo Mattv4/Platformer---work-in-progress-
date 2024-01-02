@@ -2,6 +2,7 @@ package main;
 
 import javax.swing.*;
 
+// creates a window for the game
 public class GameWindow {
     public JFrame jframe;
     public GameWindow(GamePanel gamePanel) {

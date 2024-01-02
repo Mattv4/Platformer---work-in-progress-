@@ -1,7 +1,8 @@
 package utilities;
-
+// sets constants for different game and player states
 public class Constants {
 
+    // specifies the direction of movement
     public static class Directions {
         public static final int LEFT = 0;
         public static final int UP = 1;
@@ -9,6 +10,7 @@ public class Constants {
         public static final int DOWN = 3;
     }
 
+    // specifies which animation to run
     public static class PlayerConstants{
         public static final int IDLE = 0;
         public static final int RUNNING = 1;
@@ -20,6 +22,7 @@ public class Constants {
         public static final int ATTACK_JUMP_1 = 7;
         public static final int ATTACK_JUMP_2 = 8;
 
+        // returns the length of each animation in # of frames
         public static int GetSpriteAmounts(int player_action) {
             return switch (player_action) {
                 case RUNNING -> 6;
